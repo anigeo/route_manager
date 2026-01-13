@@ -153,6 +153,7 @@ impl RouteManager {
                 },
                 &buf[..len],
             )?;
+            eprintln!("[list_family] recv len={}, rs={}, list.len={}", len, rs, list.len());
             if rs {
                 break;
             }
